@@ -1,17 +1,30 @@
 {% load static %}
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Django Project{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
-{% include 'app/navbar.html' %}
+    <!-- Navbar -->
+    {% include 'app/navbar.html' %}
 
-{% block content %}
+    <!-- Main content -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
 
-{% endblock content %}
-<script src="{% static 'js/base.js' %}"></script>
+      <ul id="messages"></ul>
+
+  <form id="form" action="">
+    <input id="input" autocomplete="off" /><button>Send</button>
+  </form>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 My Django Project</p>
+    </footer>
+
 </body>
 </html>
