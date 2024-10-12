@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff5733;
+}
+
+.container {
+    margin: 20px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5em;
+    color: #00aaff;
+}
+
+.my-logo {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.my-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
